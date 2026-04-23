@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f0f 60%);
+    color:#eee;
+    overflow-x:hidden;
+}
+
+/* GOLD GLOW */
+body::before{
+    content:'';
+    position:fixed;
+    width:200%;
+    height:200%;
+    top:-50%;
+    left:-50%;
+    background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 60%);
+    z-index:-1;
+}
+
+/* HEADER */
+header{
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    text-align:center;
+    border-bottom:1px solid rgba(212,175,55,0.2);
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    font-family:'Playfair Display',serif;
+    color:#d4af37;
+    font-size:34px;
+    letter-spacing:2px;
+}
+
+header p{color:#aaa;font-size:12px;}
+
+/* HERO */
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a') center/cover;
+}
+
+.hero h1{
+    font-size:44px;
+    font-family:'Playfair Display',serif;
+}
+
+.hero p{color:#bbb;margin-top:10px;}
+
+/* BUTTONS */
+.btn{
+    margin:10px;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.whatsapp-btn{background:#25D366;color:white;}
+.insta-btn{background:linear-gradient(45deg,#833AB4,#E1306C,#F77737);color:white;}
+.fb-btn{border:1px solid #d4af37;color:#d4af37;}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* SECTION */
+.section{
+    padding:70px 20px;
+}
+
+.section h2{
+    text-align:center;
+    color:#d4af37;
+    font-family:'Playfair Display',serif;
+    margin-bottom:50px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* GLASS CARD */
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(212,175,55,0.2);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+.icon{font-size:50px;margin-bottom:10px;}
+
+.card h3{color:#d4af37;}
+.card ul{list-style:none;color:#ccc;font-size:14px;}
+.card p{color:#ccc;font-size:14px;}
+
+/* STORE BUTTONS */
+.call-btn,.dir-btn{
+    display:inline-block;
+    margin:10px 5px;
+    padding:10px 18px;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+.call-btn{background:#d4af37;color:black;}
+.dir-btn{border:1px solid #d4af37;color:#d4af37;}
+
+/* FORM */
+form{
+    max-width:420px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    background:rgba(255,255,255,0.05);
+    border:1px solid #333;
+    color:white;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#d4af37;
+    border:none;
+    border-radius:8px;
+}
+
+/* MAP */
+.map{margin-top:40px;}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+    border-top:1px solid rgba(212,175,55,0.2);
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Shree Collection | श्री कलेक्शन</h1>
+<p>Premium Gifts • Decor • Party Essentials</p>
+</header>
+
+<section class="hero">
+<h1>Luxury Gifting Experience 🎁</h1>
+<p>Make Every Occasion Special</p>
+
+<a class="btn whatsapp-btn" href="https://wa.me/919886901584">WhatsApp</a>
+<a class="btn insta-btn" href="https://www.instagram.com/shreecollection.store/">Instagram</a>
+<a class="btn fb-btn" href="https://www.facebook.com/shreecollection.store/">Facebook</a>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section">
+<h2>Our Products</h2>
+<div class="grid">
+
+<div class="card"><div class="icon">🖼</div><h3>Photo Frames</h3><ul><li>Divine</li><li>Muslim</li><li>Customised</li><li>LED</li></ul></div>
+
+<div class="card"><div class="icon">🎁</div><h3>Gift Items</h3><ul><li>Birthday</li><li>Anniversary</li><li>Wedding</li><li>Kids</li></ul></div>
+
+<div class="card"><div class="icon">🏠</div><h3>Home Decor</h3><ul><li>Wall Decor</li><li>Showpieces</li></ul></div>
+
+<div class="card"><div class="icon">🧸</div><h3>Toys & Kids</h3><ul><li>Toys</li><li>Teddy</li><li>Stationary</li></ul></div>
+
+<div class="card"><div class="icon">👜</div><h3>Bags</h3><ul><li>Handbags</li><li>Daily Use</li></ul></div>
+
+<div class="card"><div class="icon">🍽</div><h3>Crockery</h3><ul><li>Kitchen</li><li>Serving</li></ul></div>
+
+<div class="card"><div class="icon">✨</div><h3>Figurines</h3><ul><li>Showpieces</li><li>Action</li></ul></div>
+
+</div>
+</section>
+
+<!-- PARTY -->
+<section class="section">
+<h2>Party & Decoration</h2>
+<div class="grid">
+
+<div class="card"><div class="icon">🎂</div><h3>Decoration</h3><ul><li>Birthday</li><li>Anniversary</li></ul></div>
+
+<div class="card"><div class="icon">🎈</div><h3>Balloons</h3><ul><li>Balloons</li><li>Pumps</li></ul></div>
+
+<div class="card"><div class="icon">🕯</div><h3>Candles</h3><ul><li>Musical</li><li>Number</li></ul></div>
+
+<div class="card"><div class="icon">🎀</div><h3>Party Items</h3><ul><li>Banners</li><li>Foil</li></ul></div>
+
+</div>
+</section>
+
+<!-- STORES -->
+<section class="section">
+<h2>Our Stores</h2>
+<div class="grid">
+
+<div class="card">
+<div class="icon">📍</div>
+<h3>Darbhanga</h3>
+<p>Radhi, Jale, Bihar</p>
+<a href="tel:919886901584" class="call-btn">Call</a>
+<a href="https://maps.app.goo.gl/CNuBbW3yx4srGxc99" target="_blank" class="dir-btn">Directions</a>
+</div>
+
+<div class="card">
+<div class="icon">📍</div>
+<h3>Patna</h3>
+<p>Gardanibagh, Patna</p>
+<a href="tel:919886901584" class="call-btn">Call</a>
+<a href="https://maps.app.goo.gl/CNuBbW3yx4srGxc99" target="_blank" class="dir-btn">Directions</a>
+</div>
+
+</div>
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=https://maps.app.goo.gl/CNuBbW3yx4srGxc99&output=embed"
+width="100%" height="300" style="border-radius:12px;"></iframe>
+</div>
+
+<p style="text-align:center;margin-top:20px;">
+📧 ShreeCollectionKart@gmail.com
+</p>
+</section>
+
+<!-- ORDER -->
+<section class="section">
+<h2>Place Your Order</h2>
+<form onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="product" placeholder="Product Name" required>
+<textarea id="address" placeholder="Delivery Address" required></textarea>
+<button type="submit">Send Order</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Shree Collection</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919886901584">💬</a>
+
+<script>
+function sendWhatsApp(){
+let name=document.getElementById("name").value;
+let product=document.getElementById("product").value;
+let address=document.getElementById("address").value;
+
+let msg=`Order Details:%0AName:${name}%0AProduct:${product}%0AAddress:${address}`;
+window.open(`https://wa.me/919886901584?text=${msg}`);
+}
+</script>
+
+</body>
+</html>
